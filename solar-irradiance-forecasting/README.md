@@ -22,8 +22,8 @@ This project builds a modular R pipeline to forecast solar energy potential usin
 4. Evaluated model performance using **RMSE, MAE**, and **visual diagnostics**  
 5. Created future irradiance forecasts for insight into predictability
 
-## Sample Output
-![Forecast Plot](forecast_plot.png)
+## Output
+![Forecast](forecast.png)
 
 ## Files
 - `/scripts/forecasting_models.R`: Full forecasting pipeline
