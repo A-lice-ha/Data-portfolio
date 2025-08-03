@@ -1,22 +1,34 @@
-# 🌿 Semi-Arid Ecosystem Monitoring Pipeline
+### 🌿 Vegetation Pattern Analysis in Semi-Arid Ecosystems  
+*Project Assistant, Indian Institute of Science, Bengaluru (Jun 2024 – Mar 2025)*  
+**Custom R-based geospatial and statistical pipeline to assess vegetation dynamics using NDVI from LANDSAT-2.**
 
-Custom R pipeline for the geospatial assessment and site selection in Indian semi-arid ecosystems. This project was part of my research as a Project Assistant at IISc.
+---
 
-## 🛠️ Tools Used
-- R: tidyverse, raster, sf
-- Google Earth Engine
-- Google Earth Pro
+#### 🛠️ Tools Used  
+- **R**: `raster`, `spdep`, `ggplot2`, `sf`, `tidyverse`  
+- **Satellite Data**: LANDSAT-2 NDVI  
+- **Other**: ISRO BHOONIDHI (data acquisition), Google Earth Pro (manual validation)
 
-## ⚙️ Workflow
-1. Harmonized NDVI, LST, and elevation datasets
-2. Built automated R pipelines to preprocess spatial data
-3. Conducted site selection using environmental thresholds
-4. Validated >50 sites manually and semi-automatically
-5. Reduced runtime by ~67% through automation
+---
 
-## 🔍 Outputs
-*(Add site selection maps or .tif previews here)*
+#### ⚙️ Workflow  
+- Preprocessed NDVI raster stacks from LANDSAT-8 across semi-arid regions in Madhya Pradesh and Rajasthan (pilot phase of a PhD project)  
+- Computed cell-wise statistics: **mean, standard deviation, skewness, variance, RMS**  
+- Applied **Global and Local Moran’s I** to quantify spatial autocorrelation and clustering  
+- Visualized results via **Moran scatter plots** and **spatial heatmaps**  
+- Evaluated statistical significance of vegetation clusters and outliers using **Wilcoxon tests**  
+- Shared reproducible R scripts and results internally to support future automation of ecological diagnostics  
 
-## 📂 Files
-- `data_pipeline.R`: Complete workflow
-- `maps/`: Maps and outputs
+---
+
+#### 🔍 Outputs  
+- Moran’s I maps, raster-based statistical summaries, vegetation clustering visualizations  
+- `.tif` outputs showing spatial patterns, anomalies, and continuity  
+*(Add select images or processed raster files here)*
+
+---
+
+#### 📂 Files  
+- `vegetation_stats_pipeline.R`: Complete spatial analysis and visualization pipeline  
+- `outputs/`: Moran plots, summary stats, classified raster maps  
+- `data/`: Preprocessed NDVI raster tiles from LANDSAT-8
