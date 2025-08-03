@@ -1,0 +1,19 @@
+## 🌱 Stochastic Cellular Automata for Vegetation Dynamics  
+**Language:** R  
+**Type:** Simulation Project | Spatial Ecology
+
+Developed a stochastic cellular automaton to simulate vegetation dynamics on a 2D grid. The model captures how local interactions and stochastic processes influence vegetation spread and mortality over time.
+
+**Highlights:**
+- Initialized a 50×50 spatial grid representing vegetated (1) and bare-ground (0) cells.
+- Used Von Neumann neighborhood (top, bottom, left, right) to evaluate local cell interactions.
+- Implemented probabilistic growth and death rules:
+  - Growth: Bare ground transitions to vegetation with increasing probability based on vegetated neighbors.
+  - Death: Vegetation dies with probability influenced by surrounding vegetation density.
+- Simulated over 100 time steps, storing temporal states for dynamic visualization.
+- Visualized spatial outcomes using base R graphics.
+
+**Skills Demonstrated:**  
+Stochastic modeling • Spatial simulation • Ecological dynamics • R scripting • Matrix operations • Visualization
+
+<sub>Code available on request or GitHub (private repo).</sub>
