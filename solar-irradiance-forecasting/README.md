@@ -1,13 +1,13 @@
-# 🌞 Solar Irradiance Forecasting using NASA POWER API
+# Solar Irradiance Forecasting using NASA POWER API
 
 This project builds a modular R pipeline to forecast solar energy potential using daily solar irradiance data from 2013–2023. Five forecasting models were compared to identify the most accurate approach.
 
-## 🛠️ Tools Used
+##  Tools Used
 - R: tidyverse, forecast, caret, xgboost
 - NASA POWER API
 - ggplot2, dplyr
 
-## 📈 Workflow
+## Workflow
 1. Data extraction from NASA POWER API
 2. Cleaning, feature engineering (lags, rolling stats)
 3. Model training: Linear Regression, XGBoost, GAM, SARIMA, Random Forest
@@ -22,9 +22,9 @@ This project builds a modular R pipeline to forecast solar energy potential usin
 4. Evaluated model performance using **RMSE, MAE**, and **visual diagnostics**  
 5. Created future irradiance forecasts for insight into predictability
 
-## 🔍 Sample Output
-*(Add graphs and plots here later)*
+## Sample Output
+![Forecast Plot](forecast_plot.png)
 
-## 📂 Files
+## Files
 - `/scripts/forecasting_models.R`: Full forecasting pipeline
 - `/plots/`: Forecast visualizations
